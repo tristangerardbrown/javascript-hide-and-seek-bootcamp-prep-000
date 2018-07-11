@@ -12,7 +12,7 @@ function nestedTarget() {
     ranks[i].innerHTML = parseInt(ranks[i].innerHTML) + n
   } }
   
-function deepestChild(id, element) {
-  var nodes = document.querySelectorAll(`#${id} ${element}`);
-  return nodes[nodes.length-1];
+function deepestChild(){
+  var deep = document.getElementById('grand-node').querySelectorAll('div')
+  return deep[deep.length-1]
 }
